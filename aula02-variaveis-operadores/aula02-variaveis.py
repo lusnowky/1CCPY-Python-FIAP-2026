@@ -1,5 +1,3 @@
-from mypyc.irbuild.util import is_dataclass_decorator
-
 print("ola mundo")
 
 print(7+4)
