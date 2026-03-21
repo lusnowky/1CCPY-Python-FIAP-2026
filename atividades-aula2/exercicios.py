@@ -66,12 +66,14 @@ print(f"Pastel de Queijo - R${pastel_queijo}")
 print(f"Pastel de Carne - R${pastel_carne}")
 print(f"Pastel de Frango - R${pastel_frango}")
 print(f"Pastel de Especial - R${pastel_especial}")
-sabor = str(input("Qual o sabor de pastel você quer? (Queijo/Carne/Frango/Especial): "))
+sabor = (input("Qual o sabor de pastel você quer? (Queijo/Carne/Frango/Especial): ")).strip().capitalize()
 if sabor == "Queijo":
     print(f"Ok, você comprou seu pastel e seu troco é de R${dinheiro - pastel_queijo}")
-if sabor == "Carne":
+elif sabor == "Carne":
     print(f"Ok, você comprou seu pastel e seu troco é de R${dinheiro - pastel_carne}")
-if sabor == "Frango":
+elif sabor == "Frango":
     print(f"Ok, você comprou seu pastel e seu troco é de R${dinheiro - pastel_frango}")
-if sabor == "Especial":
+elif sabor == "Especial":
     print(f"Ok, você comprou seu pastel e seu troco é de R${dinheiro - pastel_especial}")
+else:
+    print("Sabor de pastel não encontrado")
