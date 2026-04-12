@@ -1,4 +1,4 @@
-# imagina... um sistema que recolha a escolhea do usuário
+# imagina... um sistema que recolha a escolha do usuário
 # escolha usuário
 # se...
 # 0 --> sair do programa
