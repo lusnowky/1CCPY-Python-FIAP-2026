@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!---Cabeça--->
+    <head>
+        <script>
+            let dados = [0, 10, 20, 30, 40, 50];
+            let procurado = 30
+            let posicao = -1
+
+            for (i = 0; i < dados.length; i++) {
+                if (dados[i] === procurado) {
+                    posicao = i;
+                    break;
+                }
+            }
+            if (posicao == -1)
+                console.log(procurado, 'Valor não encontrado no vetor')
+            else
+            console.log("Posição = ", posicao);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+    

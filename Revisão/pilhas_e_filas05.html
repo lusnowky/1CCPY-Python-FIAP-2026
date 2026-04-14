@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!---Cabeça--->
+    <head>
+        <script>
+            let dados = [2, 5, 2, 7, 2, 9];
+            let alvo = 2;
+            let contador = 0;
+
+            for (i = 0; i < dados.length; i++) {
+                if (dados[i] === alvo) {
+                    contador++;
+                }
+            }
+           if (contador === 0)
+                console.log(alvo + "Não encontrado no vetor")
+            else
+                if(contador == 1)
+                    console.log(alvo + " encontrado " + contador + " vez no vetor");
+                else
+                    console.log(alvo + " encontrado " + contador + " vezes no vetor");
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+    
