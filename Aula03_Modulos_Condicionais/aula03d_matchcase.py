@@ -17,3 +17,4 @@ match escolha_usuário:
 
 # A diferença de match case do if, é que no if é possível
 # criar relações, enquanto no match case funciona apenas com valores fixos
+# case _ é como se fosse o else, caso não for 1 nem 0 nesse caso, da erro, e a _ representa isso

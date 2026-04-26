@@ -9,10 +9,13 @@ kg = peso * 1000
 
 if 10 <= carga <= 20:
     valorCarga = 100 * kg
-if 21 <= carga <= 30:
+elif 21 <= carga <= 30:
     valorCarga = 250 * kg
-if 31 <= carga <= 40:
+elif 31 <= carga <= 40:
     valorCarga = 340 * kg
+else:
+    print("Código da Carga Inválido")
+    exit()
 
 match cod:
     case 1:
@@ -25,6 +28,9 @@ match cod:
         imposto = 5
     case 5:
         imposto = 0
+    case _:
+        print("Código de Estado inválido.")
+        exit()
 
 valorImposto = valorCarga * (imposto / 100)
 valorTotal = valorCarga + valorImposto
