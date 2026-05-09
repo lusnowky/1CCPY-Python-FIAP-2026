@@ -9,7 +9,4 @@ for musica in musicas:
         print(info)
     print()
 
-
-
-
 # DICAS DE ESTUDO: ESTUDAR COMO PERCORRER MATRIZES
