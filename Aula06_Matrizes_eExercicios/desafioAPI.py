@@ -27,3 +27,5 @@ def erros_seguidos(codigos):
             return True
     return False
 
+def estavel(listaCodigos)
+    if listaCodigos
