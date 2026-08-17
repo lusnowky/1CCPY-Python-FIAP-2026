@@ -31,6 +31,9 @@ def erros_seguidos(codigos):
             return True
     return False
 
+
+# TENTATIVA FALHA DE TERMINAR O CODIGO
+
 def eh_estavel(codigos):
     for i in codigos:
         if eh_sucesso(codigo):
