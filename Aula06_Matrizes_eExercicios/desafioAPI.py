@@ -5,6 +5,10 @@ status = [
 [201, 500, 502, 201, 500]
 ]
 
+contador = 0
+porcentagem = 0
+
+
 # FUNÇÃO QUE VERIFICA SE 1 CÓDIGO HTTP DE UMA
 # REQUISIÇÃO É SUCESSO OU NÃO
 # 200 --> VERDADEIRO
@@ -27,5 +31,19 @@ def erros_seguidos(codigos):
             return True
     return False
 
-def estavel(listaCodigos)
-    if listaCodigos
+def eh_estavel(codigos):
+    for i in codigos:
+        if eh_sucesso(codigo):
+            contador += 1
+            if contador >= porcentagem:
+                return True
+        
+        elif erros_seguidos(codigos):
+            return False
+
+        porcentagem = (80 * len(codigos)) / 100
+        if contador >= porcentagem:
+            return True
+    return False
+    
+print(eh_estavel(status))
