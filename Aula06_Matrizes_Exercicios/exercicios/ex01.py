@@ -7,14 +7,13 @@
 
 while True:
     print("Olá, Mundo")
-    print()
 
     continuar = int(input("Deseja exibir a mensagem novamente? SIM [1] | Não [2]: "))
+
     if continuar == 1:
         continue
     elif continuar == 2:
         print("Mensagem cancelada com sucesso!")
         break
     else:
-        print("Erro!")
         break
