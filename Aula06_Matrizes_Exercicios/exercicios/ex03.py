@@ -2,11 +2,14 @@
 # inteiros entre 1 e n.
 # Valide a entrada do usuário, só aceite números positivos!!
 
-n = input("Digite um número inteiro: ")
+n = int(input("Digite um número inteiro: "))
 soma = 0
 
-while n % n == 0:
-    for i in range(n):
-        soma = soma + i
+while n <= 0:
+    print("Valor inválido! Digite apenas números inteiros")
+    n = int(input("Digite um número inteiro: "))
 
-# pensar depois
+for i in range(1, n + 1):
+    soma += i
+
+print(f"A soma de 1 até {n} é: {soma}")
